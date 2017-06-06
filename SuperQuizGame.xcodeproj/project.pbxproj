@@ -54,14 +54,62 @@
 		E216E8F41EE71BF800E66FB8 /* SuperQuizGame */ = {
 			isa = PBXGroup;
 			children = (
-				E216E8F51EE71BF900E66FB8 /* AppDelegate.swift */,
-				E216E8F71EE71BF900E66FB8 /* ViewController.swift */,
+				E216E90C1EE7204B00E66FB8 /* Questions */,
+				E216E90B1EE7203600E66FB8 /* Resources */,
+				E216E90A1EE7202300E66FB8 /* Custom */,
+				E216E9091EE7201700E66FB8 /* Controller */,
+				E216E9081EE7200900E66FB8 /* Template */,
+				E216E9071EE71FFA00E66FB8 /* UI */,
+			);
+			path = SuperQuizGame;
+			sourceTree = "<group>";
+		};
+		E216E9071EE71FFA00E66FB8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				E216E8F91EE71BF900E66FB8 /* Main.storyboard */,
 				E216E8FC1EE71BF900E66FB8 /* Assets.xcassets */,
 				E216E8FE1EE71BF900E66FB8 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E216E9081EE7200900E66FB8 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				E216E8F51EE71BF900E66FB8 /* AppDelegate.swift */,
 				E216E9011EE71BF900E66FB8 /* Info.plist */,
 			);
-			path = SuperQuizGame;
+			name = Template;
+			sourceTree = "<group>";
+		};
+		E216E9091EE7201700E66FB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E216E8F71EE71BF900E66FB8 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E216E90A1EE7202300E66FB8 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		E216E90B1EE7203600E66FB8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E216E90C1EE7204B00E66FB8 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Questions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
