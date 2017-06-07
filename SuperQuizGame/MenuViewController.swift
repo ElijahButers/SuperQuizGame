@@ -9,6 +9,8 @@
 import UIKit
 
 class MenuViewController: UIViewController {
+    
+    private let contentView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
