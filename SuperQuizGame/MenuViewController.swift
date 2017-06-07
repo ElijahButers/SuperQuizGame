@@ -11,6 +11,7 @@ import UIKit
 class MenuViewController: UIViewController {
     
     private let contentView = UIView()
+    private let logoView = UIImageView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
