@@ -27,6 +27,7 @@ class MenuViewController: UIViewController {
         navigationController?.navigationBar.barStyle = .blackTranslucent
         navigationController?.navigationBar.tintColor = UIColor.white
         view.backgroundColor = UIColor(red: 41/255, green: 128/255, blue: 185/255, alpha: 1.0)
+        layoutView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +37,10 @@ class MenuViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
+    }
+
+    func layoutView() {
+        
     }
 }
 
