@@ -13,6 +13,7 @@ class MenuViewController: UIViewController {
     private let contentView = UIView()
     private let logoView = UIImageView()
     private let buttonView = UIView()
+    private var gameButtons = [RoundedButton]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
