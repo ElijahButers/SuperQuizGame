@@ -24,6 +24,9 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        navigationController?.navigationBar.barStyle = .blackTranslucent
+        navigationController?.navigationBar.tintColor = UIColor.white
+        view.backgroundColor = UIColor(red: 41/255, green: 128/255, blue: 185/255, alpha: 1.0)
     }
 
     override func didReceiveMemoryWarning() {
