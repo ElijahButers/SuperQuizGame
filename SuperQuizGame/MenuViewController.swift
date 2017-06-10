@@ -14,6 +14,10 @@ class MenuViewController: UIViewController {
     private let logoView = UIImageView()
     private let buttonView = UIView()
     private var gameButtons = [RoundedButton]()
+    private let scoreView = UIView()
+    private let titleLabel = UILabel()
+    private let recentScoreLabel = UILabel()
+    private let highScoreLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
