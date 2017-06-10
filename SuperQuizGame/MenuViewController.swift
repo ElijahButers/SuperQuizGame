@@ -18,6 +18,8 @@ class MenuViewController: UIViewController {
     private let titleLabel = UILabel()
     private let recentScoreLabel = UILabel()
     private let highScoreLabel = UILabel()
+    
+    private let titles = ["Multiple Choice", "Image Quiz", "Right or wrong", "Emoji Riddle"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
