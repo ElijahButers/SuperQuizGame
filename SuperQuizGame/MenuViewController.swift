@@ -48,6 +48,17 @@ class MenuViewController: UIViewController {
         buttonView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(buttonView)
         
+        for (index, title) in titles.enumerated() {
+            let button = RoundedButton()
+            button.translatesAutoresizingMaskIntoConstraints = false
+            buttonView.addSubview(button)
+            button.backgroundColor = UIColor(red: 52/255, green: 152/255, blue: 219/255, alpha: 1.0)
+            button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+            button.setTitle(title, for: .normal)
+            button.tag = index
+            gameButtons.append(button)
+        }
+        
     }
 }
 
