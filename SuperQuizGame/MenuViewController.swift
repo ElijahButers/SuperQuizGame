@@ -41,6 +41,13 @@ class MenuViewController: UIViewController {
 
     func layoutView() {
         
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(contentView)
+        logoView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(logoView)
+        buttonView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(buttonView)
+        
     }
 }
 
