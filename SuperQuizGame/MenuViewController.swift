@@ -68,6 +68,15 @@ class MenuViewController: UIViewController {
         scoreView.addSubview(recentScoreLabel)
         scoreView.addSubview(highScoreLabel)
         
+        titleLabel.textAlignment = .center
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        titleLabel.textColor = UIColor.white
+        recentScoreLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        recentScoreLabel.textColor = UIColor.white
+        highScoreLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        highScoreLabel.textColor = UIColor.white
+        
+        
     }
 }
 
