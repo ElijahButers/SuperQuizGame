@@ -59,6 +59,9 @@ class MenuViewController: UIViewController {
             gameButtons.append(button)
         }
         
+        scoreView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(scoreView)
+        
     }
 }
 
