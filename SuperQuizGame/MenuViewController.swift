@@ -61,6 +61,12 @@ class MenuViewController: UIViewController {
         
         scoreView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(scoreView)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        recentScoreLabel.translatesAutoresizingMaskIntoConstraints = false
+        highScoreLabel.translatesAutoresizingMaskIntoConstraints = false
+        scoreView.addSubview(titleLabel)
+        scoreView.addSubview(recentScoreLabel)
+        scoreView.addSubview(highScoreLabel)
         
     }
 }
