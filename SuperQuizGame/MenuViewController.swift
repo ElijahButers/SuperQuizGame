@@ -113,6 +113,10 @@ class MenuViewController: UIViewController {
             scoreView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.6),
             scoreView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.3),
             scoreView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            titleLabel.topAnchor.constraint(equalTo: scoreView.bottomAnchor, constant: 8.0),
+            titleLabel.leadingAnchor.constraint(equalTo: scoreView.leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: scoreView.trailingAnchor),
+            titleLabel.bottomAnchor.constraint(equalTo: recentScoreLabel.topAnchor, constant: -8.0),
             
             
         
