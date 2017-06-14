@@ -79,6 +79,14 @@ class MenuViewController: UIViewController {
         titleLabel.text = "Multiple choice"
         recentScoreLabel.text = "Recent: 0"
         highScoreLabel.text = "Highscore: 0"
+        
+        let constraints = [
+            contentView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 8.0),
+            contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        
+        ]
     }
 }
 
