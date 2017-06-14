@@ -76,7 +76,9 @@ class MenuViewController: UIViewController {
         highScoreLabel.font = UIFont.boldSystemFont(ofSize: 20)
         highScoreLabel.textColor = UIColor.white
         
-        
+        titleLabel.text = "Multiple choice"
+        recentScoreLabel.text = "Recent: 0"
+        highScoreLabel.text = "Highscore: 0"
     }
 }
 
