@@ -103,6 +103,9 @@ class MenuViewController: UIViewController {
             gameButtons[2].bottomAnchor.constraint(equalTo: gameButtons[3].topAnchor, constant: -8.0),
             gameButtons[2].leadingAnchor.constraint(equalTo: buttonView.leadingAnchor),
             gameButtons[2].trailingAnchor.constraint(equalTo: buttonView.trailingAnchor),
+            gameButtons[3].bottomAnchor.constraint(equalTo: buttonView.bottomAnchor, constant: -8.0),
+            gameButtons[3].leadingAnchor.constraint(equalTo: buttonView.leadingAnchor),
+            gameButtons[3].trailingAnchor.constraint(equalTo: buttonView.trailingAnchor),
             
         
         ]
