@@ -109,6 +109,11 @@ class MenuViewController: UIViewController {
             gameButtons[0].heightAnchor.constraint(equalTo: gameButtons[1].heightAnchor),
             gameButtons[1].heightAnchor.constraint(equalTo: gameButtons[2].heightAnchor),
             gameButtons[2].heightAnchor.constraint(equalTo: gameButtons[3].heightAnchor),
+            scoreView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -40.0),
+            scoreView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.6),
+            scoreView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.3),
+            scoreView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            
             
         
         ]
