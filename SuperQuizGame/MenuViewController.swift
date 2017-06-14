@@ -85,6 +85,10 @@ class MenuViewController: UIViewController {
             contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            logoView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20.0),
+            logoView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.6),
+            logoView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            logoView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.2),
         
         ]
     }
