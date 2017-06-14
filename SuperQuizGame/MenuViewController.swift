@@ -97,6 +97,9 @@ class MenuViewController: UIViewController {
             gameButtons[0].bottomAnchor.constraint(equalTo: gameButtons[1].topAnchor, constant: -8.0),
             gameButtons[0].leadingAnchor.constraint(equalTo: buttonView.leadingAnchor),
             gameButtons[0].trailingAnchor.constraint(equalTo: buttonView.trailingAnchor),
+            gameButtons[1].bottomAnchor.constraint(equalTo: gameButtons[2].topAnchor, constant: -8.0),
+            gameButtons[1].leadingAnchor.constraint(equalTo: buttonView.leadingAnchor),
+            gameButtons[1].trailingAnchor.constraint(equalTo: buttonView.trailingAnchor),
             
         
         ]
