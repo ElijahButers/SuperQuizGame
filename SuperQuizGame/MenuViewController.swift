@@ -126,6 +126,7 @@ class MenuViewController: UIViewController {
             titleLabel.heightAnchor.constraint(equalTo: recentScoreLabel.heightAnchor),
             recentScoreLabel.heightAnchor.constraint(equalTo: highScoreLabel.heightAnchor)
         ]
+        NSLayoutConstraint.activate(constraints)
     }
 }
 
