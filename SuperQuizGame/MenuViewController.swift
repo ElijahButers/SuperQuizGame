@@ -103,9 +103,9 @@ class MenuViewController: UIViewController {
         highScoreLabel.font = UIFont.boldSystemFont(ofSize: 20)
         highScoreLabel.textColor = UIColor.white
         
-        titleLabel.text = "Multiple choice"
-        recentScoreLabel.text = "Recent: 0"
-        highScoreLabel.text = "Highscore: 0"
+        titleLabel.text = titles[scoreIndex]
+        recentScoreLabel.text = "Recent: " + String(recentScores[scoreIndex])
+        highScoreLabel.text = "Highscore: " + String(highScores[scoreIndex])
         
         let constraints = [
             contentView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 8.0),
