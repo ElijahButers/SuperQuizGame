@@ -57,6 +57,13 @@ class MenuViewController: UIViewController {
             UserDefaults.standard.integer(forKey: emojiRecentScoreIdentifier)
         ]
         
+        highScores = [
+            UserDefaults.standard.integer(forKey: multipleChoiceHighScoreIdentifier),
+            UserDefaults.standard.integer(forKey: imageQuizHighScoreIdentifier),
+            UserDefaults.standard.integer(forKey: rightWrongHighScoreIdentifier),
+            UserDefaults.standard.integer(forKey: emojiHighScoreIdentifier)
+        ]
+        
     }
 
     func layoutView() {
