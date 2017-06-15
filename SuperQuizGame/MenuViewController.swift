@@ -153,6 +153,11 @@ class MenuViewController: UIViewController {
             titleLabel.heightAnchor.constraint(equalTo: recentScoreLabel.heightAnchor),
             recentScoreLabel.heightAnchor.constraint(equalTo: highScoreLabel.heightAnchor)
         ]
+        
+        midXConstraints = [scoreView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor)]
+        leftConstraints = [scoreView.trailingAnchor.constraint(equalTo: contentView.leadingAnchor)]
+        rightConstraints = [scoreView.leadingAnchor.constraint(equalTo: contentView.trailingAnchor)]
+        
         NSLayoutConstraint.activate(constraints)
     }
 }
