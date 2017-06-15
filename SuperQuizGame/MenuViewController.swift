@@ -159,6 +159,7 @@ class MenuViewController: UIViewController {
         rightConstraints = [scoreView.leadingAnchor.constraint(equalTo: contentView.trailingAnchor)]
         
         NSLayoutConstraint.activate(constraints)
+        NSLayoutConstraint.activate(midXConstraints)
     }
 }
 
