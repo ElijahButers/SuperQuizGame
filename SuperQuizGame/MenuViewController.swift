@@ -50,6 +50,12 @@ class MenuViewController: UIViewController {
     }
     
     func updateScores() {
+        recentScores = [
+            UserDefaults.standard.integer(forKey: multipleChoiceRecentScoreIdentifier),
+            UserDefaults.standard.integer(forKey: imageQuizRecentScoreIdentifier),
+            UserDefaults.standard.integer(forKey: rightWrongRecentScoreIdentifier),
+            UserDefaults.standard.integer(forKey: emojiRecentScoreIdentifier)
+        ]
         
     }
 
