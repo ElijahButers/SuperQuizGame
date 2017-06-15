@@ -20,6 +20,11 @@ class MenuViewController: UIViewController {
     private let highScoreLabel = UILabel()
     
     private let titles = ["Multiple Choice", "Image Quiz", "Right or wrong", "Emoji Riddle"]
+    
+    private var recentScores = [Int]
+    private var highScores = [Int]
+    private var scoreIndex = 0
+    private var timer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
