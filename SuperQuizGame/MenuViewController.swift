@@ -21,10 +21,14 @@ class MenuViewController: UIViewController {
     
     private let titles = ["Multiple Choice", "Image Quiz", "Right or wrong", "Emoji Riddle"]
     
-    private var recentScores = [Int]
-    private var highScores = [Int]
+    private var recentScores = [Int]()
+    private var highScores = [Int]()
     private var scoreIndex = 0
     private var timer = Timer()
+    
+    private var midXConstraints: [NSLayoutConstraint]!
+    private var leftConstraints: [NSLayoutConstraint]!
+    private var rightConstraints: [NSLayoutConstraint]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
