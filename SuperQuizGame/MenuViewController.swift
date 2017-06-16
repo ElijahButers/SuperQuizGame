@@ -161,5 +161,26 @@ class MenuViewController: UIViewController {
         NSLayoutConstraint.activate(constraints)
         NSLayoutConstraint.activate(midXConstraints)
     }
+    
+    func nextScores() {
+        scoreIndex = scoreIndex < (recentScores.count - 1) ? scoreIndex + 1 : 0
+        UIView.animate(withDuration: 1.0, animations: {
+            NSLayoutConstraint.deactivate(self.midXConstraints)
+            NSLayoutConstraint.activate(self.leftConstraints)
+            self.view.layoutIfNeeded()
+        }) { (completion: Bool) in
+                self.titleLabel.text = self.titles[self.scoreIndex]
+                self.recentScoreLabel.text = "Recent: " + String(self.recentScores[self.scoreIndex])
+                self.highScoreLabel.text = "Highscore: " + String(self.highScores[self.scoreIndex])
+                NSLayoutConstraint.deactivate(self.leftConstraints)
+                NSLayoutConstraint.activate(self.rightConstraints)
+                self.view.layoutIfNeeded()
+                UIView.animate(withDuration: 1.0, animations: {
+                    NSLayoutConstraint.deactivate(self.rightConstraints)
+                    NSLayoutConstraint.activate(self.midXConstraints)
+                    self.view.layoutIfNeeded()
+            })
+        }
+    }
 }
 
