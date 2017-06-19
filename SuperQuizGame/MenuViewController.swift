@@ -165,6 +165,9 @@ class MenuViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(nextScores), userInfo: nil, repeats: true)
     }
     
+    func buttonHandler(sender: RoundedButton) {
+    }
+    
     func nextScores() {
         scoreIndex = scoreIndex < (recentScores.count - 1) ? scoreIndex + 1 : 0
         UIView.animate(withDuration: 1.0, animations: {
