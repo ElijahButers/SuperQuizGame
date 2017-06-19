@@ -29,7 +29,7 @@ class MenuViewController: UIViewController {
     private var midXConstraints: [NSLayoutConstraint]!
     private var leftConstraints: [NSLayoutConstraint]!
     private var rightConstraints: [NSLayoutConstraint]!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -72,6 +72,7 @@ class MenuViewController: UIViewController {
         view.addSubview(contentView)
         logoView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(logoView)
+        logoView.image = UIImage(named: "logo")
         buttonView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(buttonView)
         
@@ -104,8 +105,8 @@ class MenuViewController: UIViewController {
         highScoreLabel.textColor = UIColor.white
         
         titleLabel.text = titles[scoreIndex]
-        recentScoreLabel.text = "Recent: " + String(recentScores[scoreIndex])
-        highScoreLabel.text = "Highscore: " + String(highScores[scoreIndex])
+        recentScoreLabel.text = "Recent: " + String(UserDefaults.standard.integer(forKey: multipleChoiceRecentScoreIdentifier))
+        highScoreLabel.text = "Highscore: " + String(UserDefaults.standard.integer(forKey: multipleChoiceHighScoreIdentifier))
         
         let constraints = [
             contentView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 8.0),
