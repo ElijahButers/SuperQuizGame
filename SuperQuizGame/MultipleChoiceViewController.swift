@@ -9,6 +9,18 @@
 import UIKit
 
 class MultipleChoiceViewController: UIViewController {
+    
+    private let contentView = UIView()
+    private let contentViewConstraints: [NSLayoutConstraint]!
+    
+    private let questionView = UIView()
+    private let questionViewConstraints: [NSLayoutConstraint]!
+    
+    private let answerView = UIView()
+    private let answerViewConstraints: [NSLayoutConstraint]!
+    
+    private let countdownView = UIView()
+    private let countdownViewConstraints: [NSLayoutConstraint]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
