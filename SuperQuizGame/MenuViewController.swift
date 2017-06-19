@@ -171,7 +171,7 @@ class MenuViewController: UIViewController {
         var vc: UIViewController?
         switch sender.tag {
         case 0:
-            print("Multiple Choice")
+            vc = MultipleChoiceViewController()
         case 1:
             print("Image Qiuiz")
         case 2:
