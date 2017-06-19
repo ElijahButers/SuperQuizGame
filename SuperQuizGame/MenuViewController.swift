@@ -166,6 +166,23 @@ class MenuViewController: UIViewController {
     }
     
     func buttonHandler(sender: RoundedButton) {
+        
+        var vc: UIViewController?
+        switch sender.tag {
+        case 0:
+            print("Multiple Choice")
+        case 1:
+            print("Image Qiuiz")
+        case 2:
+            print("Right Wrong Quiz")
+        case 3:
+            print("Emoji Quiz")
+        default:
+            break
+        }
+        if let newVC = vc {
+            navigationController?.pushViewController(newVC, animated: true)
+        }
     }
     
     func nextScores() {
