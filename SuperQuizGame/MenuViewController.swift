@@ -84,6 +84,7 @@ class MenuViewController: UIViewController {
             button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
             button.setTitle(title, for: .normal)
             button.tag = index
+            button.addTarget(self, action: #selector(buttonHandler), for: .touchUpInside)
             gameButtons.append(button)
         }
         
