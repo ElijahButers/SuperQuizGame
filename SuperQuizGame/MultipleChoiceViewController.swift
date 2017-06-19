@@ -21,6 +21,15 @@ class MultipleChoiceViewController: UIViewController {
     
     private let countdownView = UIView()
     private let countdownViewConstraints: [NSLayoutConstraint]!
+    
+    private let questionLabel = RoundedLabel()
+    private let questionLabelConstraints: [NSLayoutConstraint]!
+    private let questionButton = RoundedButton()
+    private let questionButtonConstraints: [NSLayoutConstraint]!
+    private let answerButtons = [RoundedButton]()
+    private let answerButtonsConstraints: [NSLayoutConstraint]!
+    private let progressView = UIProgressView()
+    private let progressViewConstraints: [NSLayoutConstraint]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
