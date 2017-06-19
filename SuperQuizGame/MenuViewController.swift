@@ -163,7 +163,7 @@ class MenuViewController: UIViewController {
         NSLayoutConstraint.activate(constraints)
         NSLayoutConstraint.activate(midXConstraints)
         
-        timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(nextScores), userInfo: nil, repeats: true)
+        //timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(nextScores), userInfo: nil, repeats: true)
     }
     
     func buttonHandler(sender: RoundedButton) {
