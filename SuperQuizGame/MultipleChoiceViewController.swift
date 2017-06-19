@@ -30,11 +30,14 @@ class MultipleChoiceViewController: UIViewController {
     private let answerButtonsConstraints: [NSLayoutConstraint]!
     private let progressView = UIProgressView()
     private let progressViewConstraints: [NSLayoutConstraint]!
+    
+    private let backgroundColor = UIColor(red: 44/255, green: 62/255, blue: 80/255, alpha: 1.0)
+    private let foregroundColor = UIColor(red: 52/255, green: 73/255, blue: 94/255, alpha: 1.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = backgroundColor
     }
     
     override func viewWillAppear(_ animated: Bool) {
