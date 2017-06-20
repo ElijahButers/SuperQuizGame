@@ -51,6 +51,8 @@ class MultipleChoiceViewController: UIViewController {
         
         contentView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(contentView)
+        questionView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(questionView)
     }
 
 }
