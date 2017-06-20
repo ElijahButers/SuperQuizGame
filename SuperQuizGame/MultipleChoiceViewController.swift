@@ -71,6 +71,9 @@ class MultipleChoiceViewController: UIViewController {
             answerView.addSubview(button)
         }
         
+        countdownView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(countdownView)
+        
     }
 
 }
