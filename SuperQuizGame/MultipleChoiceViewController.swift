@@ -62,6 +62,15 @@ class MultipleChoiceViewController: UIViewController {
         questionLabel.numberOfLines = 4
         questionLabel.adjustsFontSizeToFitWidth = true
         
+        answerView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(answerView)
+        for _ in 0...3 {
+            let button = RoundedButton()
+            answerButtons.append(button)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            answerView.addSubview(button)
+        }
+        
     }
 
 }
