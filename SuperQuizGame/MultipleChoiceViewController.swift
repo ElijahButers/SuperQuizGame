@@ -38,11 +38,17 @@ class MultipleChoiceViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = backgroundColor
+        layoutView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
         navigationController?.navigationBar.isHidden = false
+        
+    }
+    
+    func layoutView() {
+        
         
     }
 
