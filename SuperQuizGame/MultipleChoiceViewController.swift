@@ -83,6 +83,12 @@ class MultipleChoiceViewController: UIViewController {
             contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ]
         
+        questionViewConstraints = [
+            questionView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20.0),
+            questionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0),
+            questionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0),
+            questionView.heightAnchor.constraint(equalTo: contentView.bottomAnchor, multiplier: 0.4)
+        ]
     }
 
 }
