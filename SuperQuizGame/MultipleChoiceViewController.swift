@@ -53,6 +53,15 @@ class MultipleChoiceViewController: UIViewController {
         view.addSubview(contentView)
         questionView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(questionView)
+        questionLabel.translatesAutoresizingMaskIntoConstraints = false
+        questionView.addSubview(questionLabel)
+        questionLabel.backgroundColor = foregroundColor
+        questionLabel.textColor = UIColor.white
+        questionLabel.font = UIFont.boldSystemFont(ofSize: 50)
+        questionLabel.textAlignment = .center
+        questionLabel.numberOfLines = 4
+        questionLabel.adjustsFontSizeToFitWidth = true
+        
     }
 
 }
