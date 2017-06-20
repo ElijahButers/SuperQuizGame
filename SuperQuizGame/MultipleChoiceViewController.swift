@@ -49,7 +49,8 @@ class MultipleChoiceViewController: UIViewController {
     
     func layoutView() {
         
-        
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(contentView)
     }
 
 }
