@@ -76,6 +76,13 @@ class MultipleChoiceViewController: UIViewController {
         progressView.translatesAutoresizingMaskIntoConstraints = false
         countdownView.addSubview(progressView)
         
+        contentViewConstraints = [
+            contentView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor),
+            contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ]
+        
     }
 
 }
