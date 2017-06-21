@@ -123,6 +123,12 @@ class MultipleChoiceViewController: UIViewController {
             countdownView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0),
             countdownView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20.0)
         ]
+        
+        progressViewConstraints = [
+            progressView.leadingAnchor.constraint(equalTo: countdownView.leadingAnchor),
+            progressView.trailingAnchor.constraint(equalTo: countdownView.trailingAnchor),
+            progressView.centerYAnchor.constraint(equalTo: countdownView.centerYAnchor)
+        ]
 
     }
 
