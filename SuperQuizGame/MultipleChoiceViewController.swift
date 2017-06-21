@@ -111,6 +111,11 @@ class MultipleChoiceViewController: UIViewController {
             answerButtons[3].trailingAnchor.constraint(equalTo: answerView.trailingAnchor),
             answerButtons[3].bottomAnchor.constraint(equalTo: answerView.bottomAnchor)
         ]
+        
+        for index in 1..<answerButtons.count {
+            answerButtonsConstraints.append(answerButtons[index].heightAnchor.constraint(equalToConstant: answerButtons[index-1].heightAnchor))
+            answerButtonsConstraints.append(answerButtons[index].heightAnchor.constraint(equalToConstant: answerButtons[index-1].widthAnchor))
+        }
     }
 
 }
