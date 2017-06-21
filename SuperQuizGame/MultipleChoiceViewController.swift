@@ -61,6 +61,8 @@ class MultipleChoiceViewController: UIViewController {
         questionLabel.textAlignment = .center
         questionLabel.numberOfLines = 4
         questionLabel.adjustsFontSizeToFitWidth = true
+        questionButton.translatesAutoresizingMaskIntoConstraints = false
+        questionView.addSubview(questionButton)
         
         answerView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(answerView)
