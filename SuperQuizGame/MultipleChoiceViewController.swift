@@ -87,7 +87,7 @@ class MultipleChoiceViewController: UIViewController {
             questionView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20.0),
             questionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0),
             questionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0),
-            questionView.heightAnchor.constraint(equalTo: contentView.bottomAnchor, multiplier: 0.4)
+            questionView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.4)
         ]
         
         questionLabelConstraints = [
@@ -105,7 +105,7 @@ class MultipleChoiceViewController: UIViewController {
         ]
         
         answerViewConstraints = [
-            answerViewConstraints.topAnchor.constraint(equalTo: questionView.bottomAnchor, constant: 20.0),
+            answerView.topAnchor.constraint(equalTo: questionView.bottomAnchor, constant: 20.0),
             answerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0),
             answerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0),
             answerView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.4)
@@ -118,9 +118,9 @@ class MultipleChoiceViewController: UIViewController {
             answerButtons[0].bottomAnchor.constraint(equalTo: answerButtons[2].topAnchor, constant: -8.0),
             answerButtons[1].trailingAnchor.constraint(equalTo: answerView.trailingAnchor),
             answerButtons[1].topAnchor.constraint(equalTo: answerView.topAnchor),
-            answerButtons[1].trailingAnchor.constraint(equalTo: answerButtons[3].topAnchor, constant: -8.0),
-            answerButtons[2].bottomAnchor.constraint(equalTo: answerView.leadingAnchor),
-            answerButtons[2].leadingAnchor.constraint(equalTo: answerButtons[3].leadingAnchor, constant: -8.0),
+            answerButtons[1].bottomAnchor.constraint(equalTo: answerButtons[3].topAnchor, constant: -8.0),
+            answerButtons[2].leadingAnchor.constraint(equalTo: answerView.leadingAnchor),
+            answerButtons[2].trailingAnchor.constraint(equalTo: answerButtons[3].leadingAnchor, constant: -8.0),
             answerButtons[2].bottomAnchor.constraint(equalTo: answerView.bottomAnchor),
             answerButtons[3].trailingAnchor.constraint(equalTo: answerView.trailingAnchor),
             answerButtons[3].bottomAnchor.constraint(equalTo: answerView.bottomAnchor)
