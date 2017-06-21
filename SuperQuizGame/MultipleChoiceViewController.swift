@@ -116,6 +116,14 @@ class MultipleChoiceViewController: UIViewController {
             answerButtonsConstraints.append(answerButtons[index].heightAnchor.constraint(equalToConstant: answerButtons[index-1].heightAnchor))
             answerButtonsConstraints.append(answerButtons[index].heightAnchor.constraint(equalToConstant: answerButtons[index-1].widthAnchor))
         }
+        
+        countdownViewConstraints = [
+            countdownView.topAnchor.constraint(equalTo: answerView.bottomAnchor, constant: 20.0),
+            countdownView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0),
+            countdownView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0),
+            countdownView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20.0)
+        ]
+
     }
 
 }
