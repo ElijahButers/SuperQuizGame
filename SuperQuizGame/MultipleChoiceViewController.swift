@@ -143,6 +143,15 @@ class MultipleChoiceViewController: UIViewController {
             progressView.trailingAnchor.constraint(equalTo: countdownView.trailingAnchor),
             progressView.centerYAnchor.constraint(equalTo: countdownView.centerYAnchor)
         ]
+        
+        NSLayoutConstraint.activate(contentViewConstraints)
+        NSLayoutConstraint.activate(questionViewConstraints)
+        NSLayoutConstraint.activate(questionLabelConstraints)
+        NSLayoutConstraint.activate(questionButtonConstraints)
+        NSLayoutConstraint.activate(answerViewConstraints)
+        NSLayoutConstraint.activate(answerButtonsConstraints)
+        NSLayoutConstraint.activate(countdownViewConstraints)
+        NSLayoutConstraint.activate(progressViewConstraints)
 
     }
 
