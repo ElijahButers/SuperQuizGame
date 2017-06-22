@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   MultipleChoice.plist
-   SuperQuizGame
-
-   Created by User on 6/22/17.
-   Copyright (c) 2017 User. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>Questions</key>
+	<array>
+		<dict>
+			<key>Answers</key>
+			<array>
+				<string>1990</string>
+				<string>2000</string>
+				<string>2005</string>
+				<string>2017</string>
+			</array>
+			<key>Correct Answer</key>
+			<string>2017</string>
+			<key>Question</key>
+			<string>What year is it?</string>
+		</dict>
+	</array>
+</dict>
 </plist>
