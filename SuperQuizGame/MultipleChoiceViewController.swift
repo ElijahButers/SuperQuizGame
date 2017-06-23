@@ -131,7 +131,7 @@ class MultipleChoiceViewController: UIViewController {
         
         for index in 1..<answerButtons.count {
             answerButtonsConstraints.append(answerButtons[index].heightAnchor.constraint(equalToConstant: answerButtons[index-1].heightAnchor))
-            answerButtonsConstraints.append(answerButtons[index].heightAnchor.constraint(equalToConstant: answerButtons[index-1].widthAnchor))
+            answerButtonsConstraints.append(answerButtons[index].widthAnchor.constraint(equalToConstant: answerButtons[index-1].widthAnchor))
         }
 
         countdownViewConstraints = [
