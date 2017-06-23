@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct MultipleChoiceQuestion {
+    let question: String
+    let correctAnswer: String
+    let answers: [String]
+}
