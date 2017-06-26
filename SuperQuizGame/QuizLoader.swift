@@ -17,3 +17,7 @@ struct MultipleChoiceQuestion {
 enum LoaderError: Error {
     case dictionaryFailed, pathFailed
 }
+
+class QuizLoader {
+    
+}
