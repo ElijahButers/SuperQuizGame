@@ -33,6 +33,11 @@ class MultipleChoiceViewController: UIViewController {
     
     private let backgroundColor = UIColor(red: 44/255, green: 62/255, blue: 80/255, alpha: 1.0)
     private let foregroundColor = UIColor(red: 52/255, green: 73/255, blue: 94/255, alpha: 1.0)
+    
+    private let quizLoader = QuizLoader()
+    private var questionArray = [MultipleChoiceQuestion]()
+    private var questionIndex = 0
+    private var currentQuestion: MultipleChoiceQuestion!
 
     override func viewDidLoad() {
         super.viewDidLoad()
