@@ -155,7 +155,10 @@ class MultipleChoiceViewController: UIViewController {
         NSLayoutConstraint.activate(answerButtonsConstraints)
         NSLayoutConstraint.activate(countdownViewConstraints)
         NSLayoutConstraint.activate(progressViewConstraints)
-
+    }
+    
+    func loadQuestions() {
+        
     }
 
 }
