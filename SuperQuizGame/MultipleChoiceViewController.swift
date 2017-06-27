@@ -203,6 +203,9 @@ class MultipleChoiceViewController: UIViewController {
     
     func startTimer() {
         
+        progressView.progressTintColor = flatGreen
+        progressView.trackTintColor = UIColor.clear
+        progressView.progress = 1.0
     }
 
 }
