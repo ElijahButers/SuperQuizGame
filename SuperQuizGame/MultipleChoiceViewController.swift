@@ -180,7 +180,7 @@ class MultipleChoiceViewController: UIViewController {
     }
     
     func loadNextQuestion() {
-        
+        currentQuestion = questionArray[questionIndex]
     }
 
 }
