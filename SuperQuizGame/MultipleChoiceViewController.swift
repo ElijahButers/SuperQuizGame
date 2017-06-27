@@ -207,5 +207,9 @@ class MultipleChoiceViewController: UIViewController {
         progressView.trackTintColor = UIColor.clear
         progressView.progress = 1.0
     }
+    
+    func updateProgressView() {
+        
+    }
 
 }
