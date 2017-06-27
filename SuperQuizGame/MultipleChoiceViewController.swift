@@ -200,5 +200,9 @@ class MultipleChoiceViewController: UIViewController {
         }
         questionLabel.text = currentQuestion.question
     }
+    
+    func startTimer() {
+        
+    }
 
 }
