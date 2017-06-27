@@ -38,6 +38,10 @@ class MultipleChoiceViewController: UIViewController {
     private var questionArray = [MultipleChoiceQuestion]()
     private var questionIndex = 0
     private var currentQuestion: MultipleChoiceQuestion!
+    
+    private var timer = Timer()
+    private var score = 0
+    private var highscore = UserDefaults.standard.integer(forKey: multipleChoiceHighScoreIdentifier)
 
     override func viewDidLoad() {
         super.viewDidLoad()
