@@ -166,6 +166,7 @@ class MultipleChoiceViewController: UIViewController {
         
         do {
             questionArray = try quizLoader.loadMultipleChoiceQuiz(forQuiz: "MultipleChoice")
+            loadNextQuestion()
         } catch {
             switch error {
             case LoaderError.dictionaryFailed:
@@ -176,6 +177,10 @@ class MultipleChoiceViewController: UIViewController {
                 print("Unknown error")
             }
         }
+    }
+    
+    func loadNextQuestion() {
+        
     }
 
 }
