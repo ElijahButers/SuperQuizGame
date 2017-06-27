@@ -206,6 +206,7 @@ class MultipleChoiceViewController: UIViewController {
         progressView.progressTintColor = flatGreen
         progressView.trackTintColor = UIColor.clear
         progressView.progress = 1.0
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateProgressView), userInfo: nil, repeats: true)
     }
     
     func updateProgressView() {
