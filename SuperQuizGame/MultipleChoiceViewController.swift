@@ -227,5 +227,9 @@ class MultipleChoiceViewController: UIViewController {
             button.isEnabled = false
         }
     }
+    
+    func showAlert(forReason reason: Int) {
+        
+    }
 
 }
