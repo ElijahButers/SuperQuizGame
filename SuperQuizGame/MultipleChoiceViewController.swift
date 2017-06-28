@@ -222,7 +222,10 @@ class MultipleChoiceViewController: UIViewController {
     }
     
     func outOfTime() {
-        
+        timer.invalidate()
+        for button in answerButtons {
+            button.isEnabled = false
+        }
     }
 
 }
