@@ -213,12 +213,16 @@ class MultipleChoiceViewController: UIViewController {
         
         progressView.progress -= 0.01/30
         if progressView.progress <= 0 {
-            
+            outOfTime()
         } else if progressView.progress <= 0.2 {
             progressView.progressTintColor = flatRed
         } else if progressView.progress <= 0.5 {
             progressView.progressTintColor = flatOrange
         }
+    }
+    
+    func outOfTime() {
+        
     }
 
 }
