@@ -199,6 +199,7 @@ class MultipleChoiceViewController: UIViewController {
             button.backgroundColor = foregroundColor
         }
         questionLabel.text = currentQuestion.question
+        startTimer()
     }
     
     func startTimer() {
