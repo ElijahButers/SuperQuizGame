@@ -10,5 +10,8 @@ import UIKit
 
 class QuizAlertView: UIView {
 
-
+    private let alertView = UIView()
+    private let titleLabel = RoundedLabel()
+    private let messageLabel = RoundedLabel()
+    let closeButton = UIButton()
 }
