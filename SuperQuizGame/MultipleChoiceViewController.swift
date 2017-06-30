@@ -241,5 +241,10 @@ class MultipleChoiceViewController: UIViewController {
             break
         }
     }
+    
+    func createQuizAlertView(withAlert alert: QuizAlertView) {
+        
+        
+    }
 
 }
