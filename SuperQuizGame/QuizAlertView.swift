@@ -44,6 +44,11 @@ class QuizAlertView: UIView {
         titleLabel.adjustsFontSizeToFitWidth = true
         titleLabel.textColor = UIColor.white
         titleLabel.textAlignment = .center
+        messageLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        messageLabel.numberOfLines = 2
+        messageLabel.adjustsFontSizeToFitWidth = true
+        messageLabel.textColor = UIColor.white
+        messageLabel.textAlignment = .center
     }
     
 }
