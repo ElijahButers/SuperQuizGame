@@ -40,6 +40,10 @@ class QuizAlertView: UIView {
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
         alertView.addSubview(titleLabel)
         alertView.addSubview(messageLabel)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        titleLabel.adjustsFontSizeToFitWidth = true
+        titleLabel.textColor = UIColor.white
+        titleLabel.textAlignment = .center
     }
     
 }
