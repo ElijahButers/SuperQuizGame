@@ -234,18 +234,12 @@ class MultipleChoiceViewController: UIViewController {
     
     func showAlert(forReason reason: Int) {
         
-        let avc = UIAlertController()
         switch reason {
         case 0:
-            avc.title = "You lost"
-            avc.message = "You ran out of time"
+            quizAlertView = QuizAlertView(withTitle: "Youl lost!", andMessage: "You ran out of time", colors: [backgroundColor, foregroundColor])
         default:
             break
         }
-        
-        let ok = UIAlertAction(title: "Continue", style: .default, handler: nil)
-        avc.addAction(ok)
-        present(avc, animated: true, completion: nil)
     }
 
 }
