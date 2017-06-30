@@ -56,6 +56,14 @@ class QuizAlertView: UIView {
         closeButton.titleLabel?.adjustsFontSizeToFitWidth = true
         closeButton.titleLabel?.textColor = UIColor.white
         closeButton.setTitle("Continue", for: .normal)
+        
+        let constraints = [
+            alertView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.3),
+            alertView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.8),
+            alertView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            alertView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            
+        ]
     }
     
 }
