@@ -21,10 +21,15 @@ class QuizAlertView: UIView {
         messageLabel.text = message
         alertView.backgroundColor = colors[0]
         closeButton.backgroundColor = colors[1]
+        layoutView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func layoutView() {
+        
     }
     
 }
