@@ -244,6 +244,14 @@ class MultipleChoiceViewController: UIViewController {
     
     func createQuizAlertView(withAlert alert: QuizAlertView) {
         
+        alert.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(alert)
+        
+        alert.topAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        alert.leadingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        alert.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        alert.bottomAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        
         
     }
 
