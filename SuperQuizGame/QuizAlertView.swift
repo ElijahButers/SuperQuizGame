@@ -30,6 +30,8 @@ class QuizAlertView: UIView {
     
     func layoutView() {
         
+        self.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.85)
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
     
 }
