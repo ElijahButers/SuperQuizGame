@@ -75,6 +75,8 @@ class QuizAlertView: UIView {
             closeButton.trailingAnchor.constraint(equalTo: alertView.trailingAnchor),
             closeButton.bottomAnchor.constraint(equalTo: closeButton.bottomAnchor)
         ]
+        
+        NSLayoutConstraint.activate(constraints)
     }
     
 }
