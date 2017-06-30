@@ -62,6 +62,10 @@ class QuizAlertView: UIView {
             alertView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.8),
             alertView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             alertView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            titleLabel.topAnchor.constraint(equalTo: alertView.topAnchor, constant: 8.0),
+            titleLabel.leadingAnchor.constraint(equalTo: alertView.leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: alertView.trailingAnchor),
+            titleLabel.heightAnchor.constraint(equalTo: alertView.heightAnchor, multiplier: 0.2),
             
         ]
     }
