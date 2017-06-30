@@ -49,6 +49,13 @@ class QuizAlertView: UIView {
         messageLabel.adjustsFontSizeToFitWidth = true
         messageLabel.textColor = UIColor.white
         messageLabel.textAlignment = .center
+        
+        closeButton.translatesAutoresizingMaskIntoConstraints = false
+        alertView.addSubview(closeButton)
+        closeButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        closeButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        closeButton.titleLabel?.textColor = UIColor.white
+        closeButton.setTitle("Continue", for: .normal)
     }
     
 }
