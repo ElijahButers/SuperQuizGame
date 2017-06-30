@@ -251,8 +251,10 @@ class MultipleChoiceViewController: UIViewController {
         alert.leadingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         alert.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         alert.bottomAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        
-        
+    }
+    
+    func closeAlert() {
+        _ = navigationController?.popViewController(animated: true)
     }
 
 }
