@@ -66,6 +66,10 @@ class QuizAlertView: UIView {
             titleLabel.leadingAnchor.constraint(equalTo: alertView.leadingAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: alertView.trailingAnchor),
             titleLabel.heightAnchor.constraint(equalTo: alertView.heightAnchor, multiplier: 0.2),
+            messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor),
+            messageLabel.leadingAnchor.constraint(equalTo: alertView.trailingAnchor),
+            messageLabel.trailingAnchor.constraint(equalTo: alertView.trailingAnchor),
+            messageLabel.bottomAnchor.constraint(equalTo: closeButton.topAnchor),
             
         ]
     }
