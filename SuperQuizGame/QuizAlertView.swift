@@ -35,6 +35,11 @@ class QuizAlertView: UIView {
         
         alertView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(alertView)
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        messageLabel.translatesAutoresizingMaskIntoConstraints = false
+        alertView.addSubview(titleLabel)
+        alertView.addSubview(messageLabel)
     }
     
 }
