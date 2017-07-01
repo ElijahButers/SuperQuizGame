@@ -240,6 +240,11 @@ class MultipleChoiceViewController: UIViewController {
         default:
             break
         }
+        
+        if let qav = quizAlertView {
+            quizAlertView?.closeButton.addTarget(self, action: #selector(closeAlert), for: .touchUpInside)
+            createQuizAlertView(withAlert: qav)
+        }
     }
     
     func createQuizAlertView(withAlert alert: QuizAlertView) {
