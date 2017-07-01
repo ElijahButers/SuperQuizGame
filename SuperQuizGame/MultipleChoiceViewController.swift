@@ -243,6 +243,12 @@ class MultipleChoiceViewController: UIViewController {
             sender.backgroundColor = flatRed
             showAlert(forReason: 1)
         }
+        for button in answerButtons {
+            button.isEnabled = false
+            if button.titleLabel?.text == currentQuestion.correctAnswer {
+                button.backgroundColor = flatGreen
+            }
+        }
     }
     
     func showAlert(forReason reason: Int) {
