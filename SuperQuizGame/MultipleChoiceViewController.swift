@@ -234,6 +234,14 @@ class MultipleChoiceViewController: UIViewController {
     
     func answerButtonHandler(_ sender: RoundedButton) {
         
+        if sender.titleLabel?.text == currentQuestion.correctAnswer {
+            score += 1
+            questionLabel.text = "Tap to continue"
+            questionButton.isEnabled = true
+        } else {
+            sender.backgroundColor = flatRed
+            showAlert(forReason: 1)
+        }
     }
     
     func showAlert(forReason reason: Int) {
