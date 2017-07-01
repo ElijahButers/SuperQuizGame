@@ -252,10 +252,10 @@ class MultipleChoiceViewController: UIViewController {
         alert.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(alert)
         
-        alert.topAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        alert.leadingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        alert.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        alert.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         alert.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        alert.bottomAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        alert.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
     func closeAlert() {
