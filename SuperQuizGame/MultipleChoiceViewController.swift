@@ -234,6 +234,7 @@ class MultipleChoiceViewController: UIViewController {
     
     func answerButtonHandler(_ sender: RoundedButton) {
         
+        timer.invalidate()
         if sender.titleLabel?.text == currentQuestion.correctAnswer {
             score += 1
             questionLabel.text = "Tap to continue"
