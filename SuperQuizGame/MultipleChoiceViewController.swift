@@ -233,7 +233,8 @@ class MultipleChoiceViewController: UIViewController {
     }
     
     func questionButtonHandler() {
-        
+        questionButton.isEnabled = false
+        questionIndex += 1
     }
     
     func answerButtonHandler(_ sender: RoundedButton) {
