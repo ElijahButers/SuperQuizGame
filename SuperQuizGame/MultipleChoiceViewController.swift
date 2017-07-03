@@ -232,6 +232,10 @@ class MultipleChoiceViewController: UIViewController {
         }
     }
     
+    func questionButtonHandler() {
+        
+    }
+    
     func answerButtonHandler(_ sender: RoundedButton) {
         
         timer.invalidate()
