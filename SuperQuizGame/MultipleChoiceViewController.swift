@@ -73,6 +73,7 @@ class MultipleChoiceViewController: UIViewController {
         questionLabel.adjustsFontSizeToFitWidth = true
         questionButton.translatesAutoresizingMaskIntoConstraints = false
         questionView.addSubview(questionButton)
+        questionButton.addTarget(self, action: #selector(questionButtonHandler), for: .touchUpInside)
         questionButton.isEnabled = false
         
         answerView.translatesAutoresizingMaskIntoConstraints = false
