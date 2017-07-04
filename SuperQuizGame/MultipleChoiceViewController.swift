@@ -83,6 +83,7 @@ class MultipleChoiceViewController: UIViewController {
             answerButtons.append(button)
             button.translatesAutoresizingMaskIntoConstraints = false
             answerView.addSubview(button)
+            button.addTarget(self, action: #selector(answerButtonHandler), for: .touchUpInside) 
         }
         
         countdownView.translatesAutoresizingMaskIntoConstraints = false
