@@ -67,7 +67,7 @@ class MultipleChoiceViewController: UIViewController {
         questionView.addSubview(questionLabel)
         questionLabel.backgroundColor = foregroundColor
         questionLabel.textColor = UIColor.white
-        questionLabel.font = UIFont.boldSystemFont(ofSize: 50)
+        questionLabel.font = UIFont.boldSystemFont(ofSize: 30)
         questionLabel.textAlignment = .center
         questionLabel.numberOfLines = 4
         questionLabel.adjustsFontSizeToFitWidth = true
