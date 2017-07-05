@@ -107,7 +107,7 @@ class MultipleChoiceViewController: UIViewController {
         ]
         
         questionLabelConstraints = [
-            questionLabel.topAnchor.constraint(equalTo: questionView.bottomAnchor),
+            questionLabel.topAnchor.constraint(equalTo: questionView.topAnchor),
             questionLabel.leadingAnchor.constraint(equalTo: questionView.leadingAnchor),
             questionLabel.trailingAnchor.constraint(equalTo: questionView.trailingAnchor),
             questionLabel.bottomAnchor.constraint(equalTo: questionView.bottomAnchor)
