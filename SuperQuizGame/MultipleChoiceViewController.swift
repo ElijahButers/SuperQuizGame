@@ -290,6 +290,11 @@ class MultipleChoiceViewController: UIViewController {
     }
     
     func closeAlert() {
+        if score < highscore {
+            highscore = score
+            UserDefaults.standard.set(highscore, forKey: multipleChoiceHighScoreIdentifier)
+        }
+        UserDefaults.standard.set(score, forKey: multipleChoiceRecentScoreIdentifier)
         _ = navigationController?.popViewController(animated: true)
     }
 
