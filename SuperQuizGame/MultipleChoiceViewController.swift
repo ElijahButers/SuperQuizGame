@@ -298,4 +298,7 @@ class MultipleChoiceViewController: UIViewController {
         _ = navigationController?.popViewController(animated: true)
     }
 
+    override func didMove(toParentViewController parent: UIViewController?) {
+        super.didMove(toParentViewController: parent)
+    }
 }
