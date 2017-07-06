@@ -14,6 +14,7 @@
 		E216E9001EE71BF900E66FB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E216E8FE1EE71BF900E66FB8 /* LaunchScreen.storyboard */; };
 		E23C578B1EEBD5300040A021 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C578A1EEBD5300040A021 /* RoundedButton.swift */; };
 		E23C578D1EEBD9060040A021 /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C578C1EEBD9060040A021 /* RoundedLabel.swift */; };
+		E24BB4371F0EB6F300832B6C /* GenericQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BB4361F0EB6F300832B6C /* GenericQuizViewController.swift */; };
 		E2665F971EFC630900E95893 /* MultipleChoice.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2665F961EFC630900E95893 /* MultipleChoice.plist */; };
 		E27118991EFD1DC600EF4ECD /* QuizLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27118981EFD1DC600EF4ECD /* QuizLoader.swift */; };
 		E27175231EF2AA630024534C /* Constants+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27175221EF2AA630024534C /* Constants+Extensions.swift */; };
@@ -31,6 +32,7 @@
 		E216E9011EE71BF900E66FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E23C578A1EEBD5300040A021 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		E23C578C1EEBD9060040A021 /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedLabel.swift; path = ../RoundedLabel.swift; sourceTree = "<group>"; };
+		E24BB4361F0EB6F300832B6C /* GenericQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericQuizViewController.swift; sourceTree = "<group>"; };
 		E2665F961EFC630900E95893 /* MultipleChoice.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MultipleChoice.plist; path = ../MultipleChoice.plist; sourceTree = "<group>"; };
 		E27118981EFD1DC600EF4ECD /* QuizLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizLoader.swift; sourceTree = "<group>"; };
 		E27175221EF2AA630024534C /* Constants+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constants+Extensions.swift"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				E216E8F71EE71BF900E66FB8 /* MenuViewController.swift */,
 				E27E4B1F1EF8278500CBFB54 /* MultipleChoiceViewController.swift */,
+				E24BB4361F0EB6F300832B6C /* GenericQuizViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				E216E8F61EE71BF900E66FB8 /* AppDelegate.swift in Sources */,
 				E27175231EF2AA630024534C /* Constants+Extensions.swift in Sources */,
 				E27118991EFD1DC600EF4ECD /* QuizLoader.swift in Sources */,
+				E24BB4371F0EB6F300832B6C /* GenericQuizViewController.swift in Sources */,
 				E27E4B201EF8278500CBFB54 /* MultipleChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
