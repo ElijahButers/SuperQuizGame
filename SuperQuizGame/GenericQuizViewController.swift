@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MultipleChoiceViewController: UIViewController {
+class GenericQuizViewController: UIViewController {
     
     private let contentView = UIView()
     private var contentViewConstraints: [NSLayoutConstraint]!
