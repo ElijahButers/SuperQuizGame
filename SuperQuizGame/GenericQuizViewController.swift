@@ -63,28 +63,9 @@ class GenericQuizViewController: UIViewController {
         view.addSubview(contentView)
         questionView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(questionView)
-        questionLabel.translatesAutoresizingMaskIntoConstraints = false
-        questionView.addSubview(questionLabel)
-        questionLabel.backgroundColor = foregroundColor
-        questionLabel.textColor = UIColor.white
-        questionLabel.font = UIFont.boldSystemFont(ofSize: 30)
-        questionLabel.textAlignment = .center
-        questionLabel.numberOfLines = 4
-        questionLabel.adjustsFontSizeToFitWidth = true
-        questionButton.translatesAutoresizingMaskIntoConstraints = false
-        questionView.addSubview(questionButton)
-        questionButton.addTarget(self, action: #selector(questionButtonHandler), for: .touchUpInside)
-        questionButton.isEnabled = false
         
         answerView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(answerView)
-        for _ in 0...3 {
-            let button = RoundedButton()
-            answerButtons.append(button)
-            button.translatesAutoresizingMaskIntoConstraints = false
-            answerView.addSubview(button)
-            button.addTarget(self, action: #selector(answerButtonHandler), for: .touchUpInside) 
-        }
         
         countdownView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(countdownView)
@@ -126,26 +107,6 @@ class GenericQuizViewController: UIViewController {
             answerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0),
             answerView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.4)
         ]
-        
-        answerButtonsConstraints = [
-            answerButtons[0].leadingAnchor.constraint(equalTo: answerView.leadingAnchor),
-            answerButtons[0].trailingAnchor.constraint(equalTo: answerButtons[1].leadingAnchor, constant: -8.0),
-            answerButtons[0].topAnchor.constraint(equalTo: answerView.topAnchor),
-            answerButtons[0].bottomAnchor.constraint(equalTo: answerButtons[2].topAnchor, constant: -8.0),
-            answerButtons[1].trailingAnchor.constraint(equalTo: answerView.trailingAnchor),
-            answerButtons[1].topAnchor.constraint(equalTo: answerView.topAnchor),
-            answerButtons[1].bottomAnchor.constraint(equalTo: answerButtons[3].topAnchor, constant: -8.0),
-            answerButtons[2].leadingAnchor.constraint(equalTo: answerView.leadingAnchor),
-            answerButtons[2].trailingAnchor.constraint(equalTo: answerButtons[3].leadingAnchor, constant: -8.0),
-            answerButtons[2].bottomAnchor.constraint(equalTo: answerView.bottomAnchor),
-            answerButtons[3].trailingAnchor.constraint(equalTo: answerView.trailingAnchor),
-            answerButtons[3].bottomAnchor.constraint(equalTo: answerView.bottomAnchor)
-        ]
-        
-        for index in 1..<answerButtons.count {
-            answerButtonsConstraints.append(answerButtons[index].heightAnchor.constraint(equalTo: answerButtons[index-1].heightAnchor))
-            answerButtonsConstraints.append(answerButtons[index].widthAnchor.constraint(equalTo: answerButtons[index-1].widthAnchor))
-        }
 
         countdownViewConstraints = [
             countdownView.topAnchor.constraint(equalTo: answerView.bottomAnchor, constant: 20.0),
@@ -162,10 +123,7 @@ class GenericQuizViewController: UIViewController {
         
         NSLayoutConstraint.activate(contentViewConstraints)
         NSLayoutConstraint.activate(questionViewConstraints)
-        NSLayoutConstraint.activate(questionLabelConstraints)
-        NSLayoutConstraint.activate(questionButtonConstraints)
         NSLayoutConstraint.activate(answerViewConstraints)
-        NSLayoutConstraint.activate(answerButtonsConstraints)
         NSLayoutConstraint.activate(countdownViewConstraints)
         NSLayoutConstraint.activate(progressViewConstraints)
         
