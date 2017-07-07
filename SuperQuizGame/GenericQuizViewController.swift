@@ -153,14 +153,6 @@ class GenericQuizViewController: UIViewController {
     }
     
     func setTitlesForButtons() {
-        
-        for (index, button) in answerButtons.enumerated() {
-            button.titleLabel?.lineBreakMode = .byWordWrapping
-            button.setTitle(currentQuestion.answers[index], for: .normal)
-            button.isEnabled = true
-            button.backgroundColor = foregroundColor
-        }
-        questionLabel.text = currentQuestion.question
         startTimer()
     }
     
