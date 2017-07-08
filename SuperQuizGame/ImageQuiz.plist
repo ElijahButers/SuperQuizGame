@@ -7,15 +7,15 @@
 		<dict>
 			<key>Answers</key>
 			<array>
-				<string></string>
-				<string></string>
-				<string></string>
-				<string></string>
+				<string>Burger</string>
+				<string>Tomato</string>
+				<string>Apple</string>
+				<string>Hammer</string>
 			</array>
 			<key>CorrectAnswer</key>
-			<string></string>
+			<string>Hammer</string>
 			<key>Question</key>
-			<string></string>
+			<string>hammer.png</string>
 		</dict>
 	</array>
 </dict>
