@@ -27,8 +27,8 @@ class ImageQuizViewController: UIViewController {
     private let progressView = UIProgressView()
     private var progressViewConstraints: [NSLayoutConstraint]!
     
-    private let backgroundColor = UIColor(red: 44/255, green: 62/255, blue: 80/255, alpha: 1.0)
-    private let foregroundColor = UIColor(red: 52/255, green: 73/255, blue: 94/255, alpha: 1.0)
+    private let backgroundColor = UIColor(red: 51/255, green: 110/255, blue: 123/255, alpha: 1.0)
+    private let foregroundColor = UIColor(red: 197/255, green: 239/255, blue: 247/255, alpha: 1.0)
     
     private let quizLoader = QuizLoader()
     private var questionArray = [MultipleChoiceQuestion]()
