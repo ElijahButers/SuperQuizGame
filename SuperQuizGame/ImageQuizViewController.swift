@@ -22,10 +22,6 @@ class ImageQuizViewController: UIViewController {
     private let countdownView = UIView()
     private var countdownViewConstraints: [NSLayoutConstraint]!
     
-    private let questionLabel = RoundedLabel()
-    private var questionLabelConstraints: [NSLayoutConstraint]!
-    private let questionButton = RoundedButton()
-    private var questionButtonConstraints: [NSLayoutConstraint]!
     private var answerButtons = [RoundedButton]()
     private var answerButtonsConstraints: [NSLayoutConstraint]!
     private let progressView = UIProgressView()
