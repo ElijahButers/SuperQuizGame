@@ -13,7 +13,7 @@ class ImageQuizViewController: UIViewController {
     private let contentView = UIView()
     private var contentViewConstraints: [NSLayoutConstraint]!
     
-    private let questionView = UIView()
+    private let questionView = UIImageView()
     private var questionViewConstraints: [NSLayoutConstraint]!
     
     private let answerView = UIView()
