@@ -111,6 +111,26 @@ class ImageQuizViewController: UIViewController {
             answerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0),
             answerView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.4)
         ]
+        
+        answerButtonsConstraints = [
+            answerButtons[0].leadingAnchor.constraint(equalTo: answerView.leadingAnchor),
+            answerButtons[0].trailingAnchor.constraint(equalTo: answerButtons[1].leadingAnchor, constant: -8.0),
+            answerButtons[0].topAnchor.constraint(equalTo: answerView.topAnchor),
+            answerButtons[0].bottomAnchor.constraint(equalTo: answerButtons[2].topAnchor, constant: -8.0),
+            answerButtons[1].trailingAnchor.constraint(equalTo: answerView.trailingAnchor),
+            answerButtons[1].topAnchor.constraint(equalTo: answerView.topAnchor),
+            answerButtons[1].bottomAnchor.constraint(equalTo: answerButtons[3].topAnchor, constant: -8.0),
+            answerButtons[2].leadingAnchor.constraint(equalTo: answerView.leadingAnchor),
+            answerButtons[2].trailingAnchor.constraint(equalTo: answerButtons[3].leadingAnchor, constant: -8.0),
+            answerButtons[2].bottomAnchor.constraint(equalTo: answerView.bottomAnchor),
+            answerButtons[3].trailingAnchor.constraint(equalTo: answerView.trailingAnchor),
+            answerButtons[3].bottomAnchor.constraint(equalTo: answerView.bottomAnchor)
+        ]
+        
+        for index in 1..<answerButtons.count {
+            answerButtonsConstraints.append(answerButtons[index].heightAnchor.constraint(equalTo: answerButtons[index-1].heightAnchor))
+            answerButtonsConstraints.append(answerButtons[index].widthAnchor.constraint(equalTo: answerButtons[index-1].widthAnchor))
+        }
 
         countdownViewConstraints = [
             countdownView.topAnchor.constraint(equalTo: answerView.bottomAnchor, constant: 20.0),
