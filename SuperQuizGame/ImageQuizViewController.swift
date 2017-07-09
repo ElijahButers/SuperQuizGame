@@ -63,6 +63,14 @@ class ImageQuizViewController: UIViewController {
         answerView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(answerView)
         
+        for _ in 0...3 {
+            let button = RoundedButton()
+            answerButtons.append(button)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            answerView.addSubview(button)
+            button.addTarget(self, action: #selector(answerButtonHandler), for: .touchUpInside)
+        }
+        
         countdownView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(countdownView)
         progressView.translatesAutoresizingMaskIntoConstraints = false
