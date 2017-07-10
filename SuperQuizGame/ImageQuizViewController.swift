@@ -144,7 +144,7 @@ class ImageQuizViewController: UIViewController {
     func loadQuestions() {
         
         do {
-            questionArray = try quizLoader.loadMultipleChoiceQuiz(forQuiz: "MultipleChoice")
+            questionArray = try quizLoader.loadMultipleChoiceQuiz(forQuiz: "ImageQuiz")
             loadNextQuestion()
         } catch {
             switch error {
