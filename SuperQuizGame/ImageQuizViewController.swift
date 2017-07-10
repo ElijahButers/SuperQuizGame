@@ -164,6 +164,14 @@ class ImageQuizViewController: UIViewController {
     }
     
     func setTitlesForButtons() {
+        for (index, button) in answerButtons.enumerated() {
+            button.titleLabel?.lineBreakMode = .byWordWrapping
+            button.setTitle(currentQuestion.answers[index], for: .normal)
+            button.isEnabled = true
+            button.backgroundColor = foregroundColor
+            button.setTitleColor(UIColor.darkGray, for: .normal)
+        }
+        questionView.image = UIImage(named: currentQuestion.question)
         startTimer()
     }
     
