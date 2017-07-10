@@ -91,20 +91,6 @@ class ImageQuizViewController: UIViewController {
             questionView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.4)
         ]
         
-        questionLabelConstraints = [
-            questionLabel.topAnchor.constraint(equalTo: questionView.topAnchor),
-            questionLabel.leadingAnchor.constraint(equalTo: questionView.leadingAnchor),
-            questionLabel.trailingAnchor.constraint(equalTo: questionView.trailingAnchor),
-            questionLabel.bottomAnchor.constraint(equalTo: questionView.bottomAnchor)
-        ]
-        
-        questionButtonConstraints = [
-            questionButton.topAnchor.constraint(equalTo: questionView.topAnchor),
-            questionButton.leadingAnchor.constraint(equalTo: questionView.leadingAnchor),
-            questionButton.trailingAnchor.constraint(equalTo: questionView.trailingAnchor),
-            questionButton.bottomAnchor.constraint(equalTo: questionView.bottomAnchor)
-        ]
-        
         answerViewConstraints = [
             answerView.topAnchor.constraint(equalTo: questionView.bottomAnchor, constant: 20.0),
             answerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0),
