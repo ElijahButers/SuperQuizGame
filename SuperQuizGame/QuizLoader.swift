@@ -14,6 +14,11 @@ struct MultipleChoiceQuestion {
     let answers: [String]
 }
 
+struct SimpleQuestion {
+    let question: String
+    let correctAnswer: String
+}
+
 enum LoaderError: Error {
     case dictionaryFailed, pathFailed
 }
