@@ -242,6 +242,7 @@ class ImageQuizViewController: UIViewController {
         }
         
         if let qav = quizAlertView {
+            quizAlertView?.closeButton.setTitleColor(UIColor.darkGray, for: .normal)
             createQuizAlertView(withAlert: qav)
         }
     }
