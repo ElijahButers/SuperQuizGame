@@ -159,6 +159,10 @@ class ImageQuizViewController: UIViewController {
     }
     
     func loadNextQuestion() {
+        
+        if quizAlertView != nil {
+            quizAlertView?.removeFromSuperview()
+        }
         currentQuestion = questionArray[questionIndex]
         setTitlesForButtons()
     }
