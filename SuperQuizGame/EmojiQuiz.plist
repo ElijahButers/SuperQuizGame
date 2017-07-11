@@ -6,10 +6,16 @@
 	<array>
 		<dict>
 			<key>Question</key>
-			<string></string>
+			<string>🐦🐤😡</string>
 			<key>CorrectAnswer</key>
-			<string></string>
+			<string>ANGRY BIRDS</string>
 		</dict>
+        <dict>
+            <key>Question</key>
+            <string>👱📖</string>
+            <key>CorrectAnswer</key>
+            <string>FACEBOOK</string>
+        </dict>
 	</array>
 </dict>
 </plist>
