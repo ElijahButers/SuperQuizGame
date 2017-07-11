@@ -236,6 +236,7 @@ class ImageQuizViewController: UIViewController {
             quizAlertView?.closeButton.addTarget(self, action: #selector(closeAlert), for: .touchUpInside)
         case 3:
             quizAlertView = QuizAlertView(withTitle: "Correct!", andMessage: "Tap to continue to get to the next question.", colors: [backgroundColor, foregroundColor])
+            quizAlertView?.closeButton.addTarget(self, action: #selector(loadNextQuestion), for: .touchUpInside)
         default:
             break
         }
