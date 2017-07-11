@@ -231,6 +231,8 @@ class ImageQuizViewController: UIViewController {
             quizAlertView = QuizAlertView(withTitle: "You lost!", andMessage: "You picked the wrong answer", colors: [backgroundColor, foregroundColor])
         case 2:
             quizAlertView = QuizAlertView(withTitle: "You won!", andMessage: "You have answered all questions", colors: [backgroundColor, foregroundColor])
+        case 3:
+            quizAlertView = QuizAlertView(withTitle: "Correct!", andMessage: "Tap to continue to get to the next question.", colors: [backgroundColor, foregroundColor])
         default:
             break
         }
