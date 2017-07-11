@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GenericQuizViewController: UIViewController {
+class EmojiQuizViewController: UIViewController {
     
     private let contentView = UIView()
     private var contentViewConstraints: [NSLayoutConstraint]!
