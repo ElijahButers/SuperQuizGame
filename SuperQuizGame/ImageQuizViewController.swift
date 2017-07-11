@@ -208,6 +208,8 @@ class ImageQuizViewController: UIViewController {
         timer.invalidate()
         if sender.titleLabel?.text == currentQuestion.correctAnswer {
             score += 1
+            questionIndex += 1
+            questionIndex < questionArray.count ? showAlert(forReason: 3) : showAlert(forReason: 2)
         } else {
             sender.backgroundColor = flatRed
             showAlert(forReason: 1)
