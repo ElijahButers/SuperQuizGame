@@ -227,10 +227,13 @@ class ImageQuizViewController: UIViewController {
         switch reason {
         case 0:
             quizAlertView = QuizAlertView(withTitle: "You lost!", andMessage: "You ran out of time", colors: [backgroundColor, foregroundColor])
+            quizAlertView?.closeButton.addTarget(self, action: #selector(closeAlert), for: .touchUpInside)
         case 1:
             quizAlertView = QuizAlertView(withTitle: "You lost!", andMessage: "You picked the wrong answer", colors: [backgroundColor, foregroundColor])
+            quizAlertView?.closeButton.addTarget(self, action: #selector(closeAlert), for: .touchUpInside)
         case 2:
             quizAlertView = QuizAlertView(withTitle: "You won!", andMessage: "You have answered all questions", colors: [backgroundColor, foregroundColor])
+            quizAlertView?.closeButton.addTarget(self, action: #selector(closeAlert), for: .touchUpInside)
         case 3:
             quizAlertView = QuizAlertView(withTitle: "Correct!", andMessage: "Tap to continue to get to the next question.", colors: [backgroundColor, foregroundColor])
         default:
@@ -238,7 +241,6 @@ class ImageQuizViewController: UIViewController {
         }
         
         if let qav = quizAlertView {
-            quizAlertView?.closeButton.addTarget(self, action: #selector(closeAlert), for: .touchUpInside)
             createQuizAlertView(withAlert: qav)
         }
     }
