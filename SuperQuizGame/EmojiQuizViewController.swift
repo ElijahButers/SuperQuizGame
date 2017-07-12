@@ -19,6 +19,9 @@ class EmojiQuizViewController: UIViewController {
     private let answerView = UIView()
     private var answerViewConstraints: [NSLayoutConstraint]!
     
+    private let answerTextField = UITextField()
+    private var answerTextFieldConstraints: [NSLayoutConstraint]!
+    
     private let countdownView = UIView()
     private var countdownViewConstraints: [NSLayoutConstraint]!
     
