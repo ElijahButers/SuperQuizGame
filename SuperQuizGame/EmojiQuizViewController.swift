@@ -120,6 +120,13 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
             answerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0),
             answerView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.4)
         ]
+        
+        answerTextFieldConstraints = [
+            answerTextField.heightAnchor.constraint(equalTo: answerView.heightAnchor, multiplier: 0.5),
+            answerTextField.leadingAnchor.constraint(equalTo: answerView.leadingAnchor),
+            answerTextField.trailingAnchor.constraint(equalTo: answerView.trailingAnchor),
+            answerTextField.centerYAnchor.constraint(equalTo: answerView.centerYAnchor)
+        ]
 
         countdownViewConstraints = [
             countdownView.topAnchor.constraint(equalTo: answerView.bottomAnchor, constant: 20.0),
