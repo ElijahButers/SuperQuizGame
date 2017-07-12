@@ -144,6 +144,7 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         NSLayoutConstraint.activate(contentViewConstraints)
         NSLayoutConstraint.activate(questionViewConstraints)
         NSLayoutConstraint.activate(answerViewConstraints)
+        NSLayoutConstraint.activate(answerTextFieldConstraints)
         NSLayoutConstraint.activate(countdownViewConstraints)
         NSLayoutConstraint.activate(progressViewConstraints)
         
