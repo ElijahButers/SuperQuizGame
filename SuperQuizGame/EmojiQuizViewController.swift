@@ -154,7 +154,7 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
     func loadQuestions() {
         
         do {
-            questionArray = try quizLoader.loadMultipleChoiceQuiz(forQuiz: "MultipleChoice")
+            questionArray = try quizLoader.loadSimpleQuiz(forQuiz: "EmojiQuiz")
             loadNextQuestion()
         } catch {
             switch error {
