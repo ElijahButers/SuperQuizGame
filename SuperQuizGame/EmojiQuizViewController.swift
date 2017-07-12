@@ -44,7 +44,7 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
     
     private var timer = Timer()
     private var score = 0
-    private var highscore = UserDefaults.standard.integer(forKey: multipleChoiceHighScoreIdentifier)
+    private var highscore = UserDefaults.standard.integer(forKey: emojiHighScoreIdentifier)
     private var quizAlertView: QuizAlertView?
 
     override func viewDidLoad() {
