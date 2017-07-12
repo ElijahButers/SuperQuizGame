@@ -70,6 +70,16 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         answerView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(answerView)
         
+        answerTextField.translatesAutoresizingMaskIntoConstraints = false
+        answerView.addSubview(answerTextField)
+        answerTextField.textColor = UIColor.white
+        answerTextField.textAlignment = .center
+        answerTextField.font = UIFont.boldSystemFont(ofSize: 30.0)
+        answerTextField.adjustsFontSizeToFitWidth = true
+        answerTextField.autocorrectionType = .no
+        answerTextField.isEnabled = false
+        answerTextField.delegate = self
+        
         countdownView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(countdownView)
         progressView.translatesAutoresizingMaskIntoConstraints = false
