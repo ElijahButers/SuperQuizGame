@@ -257,9 +257,9 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
     func closeAlert() {
         if score < highscore {
             highscore = score
-            UserDefaults.standard.set(highscore, forKey: multipleChoiceHighScoreIdentifier)
+            UserDefaults.standard.set(highscore, forKey: emojiHighScoreIdentifier)
         }
-        UserDefaults.standard.set(score, forKey: multipleChoiceRecentScoreIdentifier)
+        UserDefaults.standard.set(score, forKey: emojiRecentScoreIdentifier)
         _ = navigationController?.popViewController(animated: true)
     }
 
