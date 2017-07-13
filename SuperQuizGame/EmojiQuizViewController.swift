@@ -78,6 +78,11 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         questionLabel.numberOfLines = 4
         questionLabel.adjustsFontSizeToFitWidth = true
         
+        questionButton.translatesAutoresizingMaskIntoConstraints = false
+        questionView.addSubview(questionButton)
+        questionButton.addTarget(self, action: #selector(questionButtonHandler), for: .touchUpInside)
+        questionButton.isEnabled = false
+        
         answerTextField.translatesAutoresizingMaskIntoConstraints = false
         answerView.addSubview(answerTextField)
         answerTextField.textColor = UIColor.white
