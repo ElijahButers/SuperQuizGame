@@ -249,7 +249,7 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         case 0:
             quizAlertView = QuizAlertView(withTitle: "You lost!", andMessage: "You ran out of time", colors: [backgroundColor, foregroundColor])
         case 1:
-            quizAlertView = QuizAlertView(withTitle: "You lost!", andMessage: "You picked the wrong answer", colors: [backgroundColor, foregroundColor])
+            quizAlertView = QuizAlertView(withTitle: "You lost!", andMessage: "You entered the wrong answer", colors: [backgroundColor, foregroundColor])
         case 2:
             quizAlertView = QuizAlertView(withTitle: "You won!", andMessage: "You have answered all questions", colors: [backgroundColor, foregroundColor])
         default:
