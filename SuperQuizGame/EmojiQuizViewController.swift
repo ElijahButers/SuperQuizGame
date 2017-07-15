@@ -225,6 +225,12 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    func questionButtonHandler() {
+        questionButton.isEnabled = false
+        questionIndex += 1
+        questionIndex < questionArray.count ? loadNextQuestion() : showAlert(forReason: 2)
+    }
+    
     func answerButtonHandler(_ sender: RoundedButton) {
         
         timer.invalidate()
