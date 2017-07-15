@@ -231,6 +231,10 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         questionIndex < questionArray.count ? loadNextQuestion() : showAlert(forReason: 2)
     }
     
+    func checkAnswer(withString string: String) {
+        
+    }
+    
     func showAlert(forReason reason: Int) {
         
         switch reason {
