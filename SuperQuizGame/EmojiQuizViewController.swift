@@ -232,7 +232,14 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
     }
     
     func checkAnswer(withString string: String) {
-        
+        answerTextField.isEnabled = false
+        if string == currentQuestion.correctAnswer {
+            questionLabel.backgroundColor = flatGreen
+            questionLabel.isEnabled = true
+        } else {
+            questionLabel.backgroundColor = flatRed
+            showAlert(forReason: 1)
+        }
     }
     
     func showAlert(forReason reason: Int) {
