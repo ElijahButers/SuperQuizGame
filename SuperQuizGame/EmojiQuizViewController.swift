@@ -189,6 +189,11 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
     }
     
     func setTitlesForButtons() {
+        questionLabel.backgroundColor = foregroundColor
+        questionLabel.text = currentQuestion.question
+        answerTextField.text = nil
+        answerTextField.placeholder = "Answer"
+        answerTextField.isEnabled = true
         startTimer()
     }
     
