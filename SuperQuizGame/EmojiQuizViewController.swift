@@ -232,6 +232,7 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
     }
     
     func checkAnswer(withString string: String) {
+        timer.invalidate()
         answerTextField.isEnabled = false
         if string == currentQuestion.correctAnswer {
             questionLabel.backgroundColor = flatGreen
