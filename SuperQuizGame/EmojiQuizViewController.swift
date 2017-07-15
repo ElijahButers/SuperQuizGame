@@ -241,6 +241,7 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
             questionLabel.backgroundColor = flatRed
             showAlert(forReason: 1)
         }
+        questionLabel.text = currentQuestion.correctAnswer
     }
     
     func showAlert(forReason reason: Int) {
