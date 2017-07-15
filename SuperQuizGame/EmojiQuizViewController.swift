@@ -231,25 +231,6 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         questionIndex < questionArray.count ? loadNextQuestion() : showAlert(forReason: 2)
     }
     
-    func answerButtonHandler(_ sender: RoundedButton) {
-        
-        timer.invalidate()
-        if sender.titleLabel?.text == currentQuestion.correctAnswer {
-            score += 1
-            questionLabel.text = "Tap to continue"
-            questionButton.isEnabled = true
-        } else {
-            sender.backgroundColor = flatRed
-            showAlert(forReason: 1)
-        }
-        for button in answerButtons {
-            button.isEnabled = false
-            if button.titleLabel?.text == currentQuestion.correctAnswer {
-                button.backgroundColor = flatGreen
-            }
-        }
-    }
-    
     func showAlert(forReason reason: Int) {
         
         switch reason {
