@@ -245,6 +245,12 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        if let string = textField.text?.uppercased() {
+            checkAnswer(withString: string)
+        }
+        return true
     }
     
     func showAlert(forReason reason: Int) {
