@@ -177,7 +177,7 @@ class MenuViewController: UIViewController {
         case 2:
             print("Right Wrong Quiz")
         case 3:
-            print("Emoji Quiz")
+            vc = EmojiQuizViewController()
         default:
             break
         }
