@@ -244,6 +244,9 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         questionLabel.text = currentQuestion.correctAnswer
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    }
+    
     func showAlert(forReason reason: Int) {
         
         switch reason {
