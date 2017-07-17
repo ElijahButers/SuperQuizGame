@@ -257,7 +257,9 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
     }
     
     func keyboardWillShow(notification: NSNotification) {
-    
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            self.answerView.frame.origin.y -= keyboardSize.height
+        }
     }
     
     func showAlert(forReason reason: Int) {
