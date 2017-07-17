@@ -53,8 +53,8 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         view.backgroundColor = backgroundColor
         layoutView()
         
-        NotificationCenter.default.addObserver(self, selector: #selector( ), name: Notification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(), name: Notification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: Notification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: Notification.Name.UIKeyboardWillHide, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -265,6 +265,7 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
     func keyboardWillHide(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             self.answerView.frame.origin.y += keyboardSize.height
+        }
     }
     
     func showAlert(forReason reason: Int) {
