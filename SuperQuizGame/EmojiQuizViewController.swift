@@ -52,6 +52,9 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         
         view.backgroundColor = backgroundColor
         layoutView()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector( ), name: Notification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(), name: Notification.Name.UIKeyboardWillShow, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
