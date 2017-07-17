@@ -256,6 +256,10 @@ class EmojiQuizViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    func keyboardWillShow(notification: NSNotification) {
+    
+    }
+    
     func showAlert(forReason reason: Int) {
         
         switch reason {
