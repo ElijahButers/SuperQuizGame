@@ -24,6 +24,7 @@
 		E27782121F0FCEAF0069422F /* ImageQuiz.plist in Resources */ = {isa = PBXBuildFile; fileRef = E27782111F0FCEAF0069422F /* ImageQuiz.plist */; };
 		E27E4B201EF8278500CBFB54 /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27E4B1F1EF8278500CBFB54 /* MultipleChoiceViewController.swift */; };
 		E2DF41401F0407AE00219C46 /* QuizAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF413F1F0407AE00219C46 /* QuizAlertView.swift */; };
+		E2EB8A731F1E6AB300A262AB /* RightWrongQuiz.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2EB8A721F1E6AB300A262AB /* RightWrongQuiz.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		E27782111F0FCEAF0069422F /* ImageQuiz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageQuiz.plist; sourceTree = "<group>"; };
 		E27E4B1F1EF8278500CBFB54 /* MultipleChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewController.swift; sourceTree = "<group>"; };
 		E2DF413F1F0407AE00219C46 /* QuizAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlertView.swift; sourceTree = "<group>"; };
+		E2EB8A721F1E6AB300A262AB /* RightWrongQuiz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RightWrongQuiz.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				E2665F961EFC630900E95893 /* MultipleChoice.plist */,
 				E27782111F0FCEAF0069422F /* ImageQuiz.plist */,
 				E2716D021F1530F9005772A7 /* EmojiQuiz.plist */,
+				E2EB8A721F1E6AB300A262AB /* RightWrongQuiz.plist */,
 			);
 			name = Questions;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2716D031F1530F9005772A7 /* EmojiQuiz.plist in Resources */,
+				E2EB8A731F1E6AB300A262AB /* RightWrongQuiz.plist in Resources */,
 				E216E9001EE71BF900E66FB8 /* LaunchScreen.storyboard in Resources */,
 				E2665F971EFC630900E95893 /* MultipleChoice.plist in Resources */,
 				E216E8FD1EE71BF900E66FB8 /* Assets.xcassets in Resources */,
