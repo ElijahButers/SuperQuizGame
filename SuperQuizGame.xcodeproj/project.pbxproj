@@ -25,6 +25,7 @@
 		E27E4B201EF8278500CBFB54 /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27E4B1F1EF8278500CBFB54 /* MultipleChoiceViewController.swift */; };
 		E2DF41401F0407AE00219C46 /* QuizAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF413F1F0407AE00219C46 /* QuizAlertView.swift */; };
 		E2EB8A731F1E6AB300A262AB /* RightWrongQuiz.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2EB8A721F1E6AB300A262AB /* RightWrongQuiz.plist */; };
+		E2EB8A751F1EACC600A262AB /* RightWrongQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EB8A741F1EACC600A262AB /* RightWrongQuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E27E4B1F1EF8278500CBFB54 /* MultipleChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewController.swift; sourceTree = "<group>"; };
 		E2DF413F1F0407AE00219C46 /* QuizAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAlertView.swift; sourceTree = "<group>"; };
 		E2EB8A721F1E6AB300A262AB /* RightWrongQuiz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RightWrongQuiz.plist; sourceTree = "<group>"; };
+		E2EB8A741F1EACC600A262AB /* RightWrongQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightWrongQuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				E24BB4361F0EB6F300832B6C /* GenericQuizViewController.swift */,
 				E277820F1F0FC8280069422F /* ImageQuizViewController.swift */,
 				E2716D041F154FCC005772A7 /* EmojiQuizViewController.swift */,
+				E2EB8A741F1EACC600A262AB /* RightWrongQuizViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				E23C578B1EEBD5300040A021 /* RoundedButton.swift in Sources */,
 				E2DF41401F0407AE00219C46 /* QuizAlertView.swift in Sources */,
 				E23C578D1EEBD9060040A021 /* RoundedLabel.swift in Sources */,
+				E2EB8A751F1EACC600A262AB /* RightWrongQuizViewController.swift in Sources */,
 				E216E8F61EE71BF900E66FB8 /* AppDelegate.swift in Sources */,
 				E2716D051F154FCC005772A7 /* EmojiQuizViewController.swift in Sources */,
 				E27175231EF2AA630024534C /* Constants+Extensions.swift in Sources */,
