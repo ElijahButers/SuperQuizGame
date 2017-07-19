@@ -31,8 +31,8 @@ class RightWrongQuizViewController: UIViewController {
     private let progressView = UIProgressView()
     private var progressViewConstraints: [NSLayoutConstraint]!
     
-    private let backgroundColor = UIColor(red: 44/255, green: 62/255, blue: 80/255, alpha: 1.0)
-    private let foregroundColor = UIColor(red: 52/255, green: 73/255, blue: 94/255, alpha: 1.0)
+    private let backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1.0)
+    private let foregroundColor = UIColor(red: 236/255, green: 240/255, blue: 241/255, alpha: 1.0)
     
     private let quizLoader = QuizLoader()
     private var questionArray = [MultipleChoiceQuestion]()
