@@ -35,9 +35,9 @@ class RightWrongQuizViewController: UIViewController {
     private let foregroundColor = UIColor(red: 236/255, green: 240/255, blue: 241/255, alpha: 1.0)
     
     private let quizLoader = QuizLoader()
-    private var questionArray = [MultipleChoiceQuestion]()
+    private var questionArray = [SimpleQuestion]()
     private var questionIndex = 0
-    private var currentQuestion: MultipleChoiceQuestion!
+    private var currentQuestion: SimpleQuestion!
     
     private var timer = Timer()
     private var score = 0
