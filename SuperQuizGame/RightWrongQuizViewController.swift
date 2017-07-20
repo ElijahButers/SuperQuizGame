@@ -67,6 +67,17 @@ class RightWrongQuizViewController: UIViewController {
         answerView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(answerView)
         
+        answerView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(answerView)
+        questionLabel.translatesAutoresizingMaskIntoConstraints = false
+        questionView.addSubview(questionLabel)
+        questionLabel.backgroundColor = foregroundColor
+        questionLabel.textColor = UIColor.darkGray
+        questionLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        questionLabel.textAlignment = .center
+        questionLabel.numberOfLines = 4
+        questionLabel.adjustsFontSizeToFitWidth = true
+        
         countdownView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(countdownView)
         progressView.translatesAutoresizingMaskIntoConstraints = false
