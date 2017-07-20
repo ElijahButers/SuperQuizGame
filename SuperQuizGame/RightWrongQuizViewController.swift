@@ -67,8 +67,6 @@ class RightWrongQuizViewController: UIViewController {
         answerView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(answerView)
         
-        answerView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(answerView)
         questionLabel.translatesAutoresizingMaskIntoConstraints = false
         questionView.addSubview(questionLabel)
         questionLabel.backgroundColor = foregroundColor
