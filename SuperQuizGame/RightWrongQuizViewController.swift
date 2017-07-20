@@ -67,6 +67,13 @@ class RightWrongQuizViewController: UIViewController {
         answerView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(answerView)
         
+        for _ in 0...1 {
+            let button = RoundedButton()
+            answerButtons.append(button)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            answerView.addSubview(button)
+        }
+        
         questionLabel.translatesAutoresizingMaskIntoConstraints = false
         questionView.addSubview(questionLabel)
         questionLabel.backgroundColor = foregroundColor
