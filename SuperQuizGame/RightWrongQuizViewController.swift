@@ -78,6 +78,11 @@ class RightWrongQuizViewController: UIViewController {
         questionLabel.numberOfLines = 4
         questionLabel.adjustsFontSizeToFitWidth = true
         
+        questionButton.translatesAutoresizingMaskIntoConstraints = false
+        questionView.addSubview(questionButton)
+        questionButton.addTarget(self, action: #selector(questionButtonHandler), for: .touchUpInside)
+        questionButton.isEnabled = false
+        
         countdownView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(countdownView)
         progressView.translatesAutoresizingMaskIntoConstraints = false
