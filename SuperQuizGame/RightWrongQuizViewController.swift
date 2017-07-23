@@ -67,11 +67,12 @@ class RightWrongQuizViewController: UIViewController {
         answerView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(answerView)
         
-        for _ in 0...1 {
+        for index in 0...1 {
             let button = RoundedButton()
             answerButtons.append(button)
             button.translatesAutoresizingMaskIntoConstraints = false
             answerView.addSubview(button)
+            index == 0 ? button.setTitle("Correct", for: .normal) : button.setTitle("Wrong", for: .normal)
         }
         
         questionLabel.translatesAutoresizingMaskIntoConstraints = false
