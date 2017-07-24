@@ -188,6 +188,11 @@ class RightWrongQuizViewController: UIViewController {
     }
     
     func setTitlesForButtons() {
+        for button in answerButtons {
+            button.isEnabled = true
+            button.backgroundColor = foregroundColor
+            button.setTitleColor(UIColor.darkGray, for: .normal)
+        }
         startTimer()
     }
     
