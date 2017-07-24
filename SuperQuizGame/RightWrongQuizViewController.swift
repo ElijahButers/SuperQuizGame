@@ -168,7 +168,7 @@ class RightWrongQuizViewController: UIViewController {
     func loadQuestions() {
         
         do {
-            questionArray = try quizLoader.loadMultipleChoiceQuiz(forQuiz: "MultipleChoice")
+            questionArray = try quizLoader.loadSimpleQuiz(forQuiz: "RightWrongQuiz")
             loadNextQuestion()
         } catch {
             switch error {
