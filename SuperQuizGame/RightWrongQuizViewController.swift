@@ -219,6 +219,10 @@ class RightWrongQuizViewController: UIViewController {
         }
     }
     
+    func questionButtonHandler() {
+        
+    }
+    
     func answerButtonHandler(_ sender: RoundedButton) {
         
         timer.invalidate()
