@@ -193,6 +193,7 @@ class RightWrongQuizViewController: UIViewController {
             button.backgroundColor = foregroundColor
             button.setTitleColor(UIColor.darkGray, for: .normal)
         }
+        questionLabel.text = currentQuestion.question
         startTimer()
     }
     
