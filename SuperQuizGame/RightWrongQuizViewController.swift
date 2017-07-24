@@ -158,6 +158,7 @@ class RightWrongQuizViewController: UIViewController {
         NSLayoutConstraint.activate(contentViewConstraints)
         NSLayoutConstraint.activate(questionViewConstraints)
         NSLayoutConstraint.activate(answerViewConstraints)
+        NSLayoutConstraint.activate(answerButtonsConstraints)
         NSLayoutConstraint.activate(countdownViewConstraints)
         NSLayoutConstraint.activate(progressViewConstraints)
         
