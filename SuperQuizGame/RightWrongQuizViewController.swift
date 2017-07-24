@@ -129,6 +129,18 @@ class RightWrongQuizViewController: UIViewController {
             answerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0),
             answerView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.4)
         ]
+        
+        answerButtonsConstraints = [
+            answerButtons[0].leadingAnchor.constraint(equalTo: answerView.leadingAnchor),
+            answerButtons[0].trailingAnchor.constraint(equalTo: answerView.trailingAnchor),
+            answerButtons[0].topAnchor.constraint(equalTo: answerView.topAnchor),
+            answerButtons[0].bottomAnchor.constraint(equalTo: answerButtons[1].topAnchor, constant: -8.0),
+            answerButtons[1].leadingAnchor.constraint(equalTo: answerView.leadingAnchor),
+            answerButtons[1].trailingAnchor.constraint(equalTo: answerView.trailingAnchor),
+            answerButtons[1].bottomAnchor.constraint(equalTo: answerView.bottomAnchor),
+            answerButtons[0].heightAnchor.constraint(equalTo: answerButtons[1].heightAnchor),
+            answerButtons[0].widthAnchor.constraint(equalTo: answerButtons[1].widthAnchor)
+        ]
 
         countdownViewConstraints = [
             countdownView.topAnchor.constraint(equalTo: answerView.bottomAnchor, constant: 20.0),
