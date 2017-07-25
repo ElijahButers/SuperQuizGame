@@ -270,6 +270,7 @@ class RightWrongQuizViewController: UIViewController {
         
         if let qav = quizAlertView {
             quizAlertView?.closeButton.addTarget(self, action: #selector(closeAlert), for: .touchUpInside)
+            quizAlertView?.closeButton.setTitleColor(UIColor.darkGray, for: .normal)
             createQuizAlertView(withAlert: qav)
         }
     }
