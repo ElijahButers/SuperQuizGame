@@ -240,6 +240,7 @@ class RightWrongQuizViewController: UIViewController {
             questionButton.isEnabled = true
         } else {
             sender.backgroundColor = flatRed
+            sender.setTitleColor(UIColor.white, for: .normal)
             showAlert(forReason: 1)
         }
         for button in answerButtons {
