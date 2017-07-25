@@ -285,9 +285,9 @@ class RightWrongQuizViewController: UIViewController {
     func closeAlert() {
         if score < highscore {
             highscore = score
-            UserDefaults.standard.set(highscore, forKey: multipleChoiceHighScoreIdentifier)
+            UserDefaults.standard.set(highscore, forKey: rightWrongHighScoreIdentifier)
         }
-        UserDefaults.standard.set(score, forKey: multipleChoiceRecentScoreIdentifier)
+        UserDefaults.standard.set(score, forKey: rightWrongRecentScoreIdentifier)
         _ = navigationController?.popViewController(animated: true)
     }
 
