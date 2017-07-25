@@ -73,6 +73,7 @@ class RightWrongQuizViewController: UIViewController {
             button.translatesAutoresizingMaskIntoConstraints = false
             answerView.addSubview(button)
             index == 0 ? button.setTitle("Correct", for: .normal) : button.setTitle("Wrong", for: .normal)
+            button.addTarget(self, action: #selector(answerButtonHandler), for: .touchUpInside)
         }
         
         questionLabel.translatesAutoresizingMaskIntoConstraints = false
