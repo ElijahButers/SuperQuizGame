@@ -247,6 +247,7 @@ class RightWrongQuizViewController: UIViewController {
             button.isEnabled = false
             if button.titleLabel?.text == currentQuestion.correctAnswer {
                 button.backgroundColor = flatGreen
+                button.setTitleColor(UIColor.white, for: .normal)
             }
         }
     }
